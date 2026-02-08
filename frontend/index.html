@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema - Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-slate-800 text-white p-4 shadow-xl">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">MY CINEMA ADM</h1>
+            <div class="space-x-4" id="nav-links">
+                <button onclick="app.load('films')" class="hover:text-blue-400">Films</button>
+                <button onclick="app.load('salles')" class="hover:text-blue-400">Salles</button>
+                <button onclick="app.load('seances')" class="hover:text-blue-400">Séances</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6" id="app-content">
+        <!-- Contenu injecté par JS -->
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
